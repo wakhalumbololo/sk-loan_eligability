@@ -18,6 +18,7 @@ with st.expander("Data Set"):
   st.write("**X-Variables**")
   x_raw = df.drop("Loan_Status", axis=1)
   x_raw.drop("Loan_ID", axis=1 , inplace=True)
+  x_raw.drop("Loan_Amount_Term", axis=1 , inplace=True)
   x_raw
 
   st.write("**Y-Variable**")
@@ -39,5 +40,8 @@ with st.sidebar:
   Credit_History = st.selectbox("Credit history", ("0","1"))
   Property_Area = st.selectbox("Property Area", ("Urban","Rural","Semiurban"))
   ApplicantIncome = st.slider("Applicant Income",0,50000,81000)
+  CoapplicantIncome = st.slider("Co-Applicant Income",0,50000,20000)
+  LoanAmount = st.slider("Loan amount", 17 , 100, 600)
+  
   
   
