@@ -34,10 +34,10 @@ with st.sidebar:
   st.header("Applicant details (input)")
   Gender = st.selectbox("Gender",("Male","Female"))
   Married = st.selectbox("Married",("Yes","No"))
-  Dependants = st.selectbox("Dependants",("0","1","2","3+"))
+  Dependents = st.selectbox("Dependants",("0","1","2","3+"))
   Education = st.selectbox("Education", ("Graduate","Not Graduate"))
   Self_Employed = st.selectbox("Self Employed", ("Yes","No"))
-  Credit_History = st.selectbox("Credit history", ("0","1"))
+  Credit_History = st.slider("Credit history", 0,1,1)
   Property_Area = st.selectbox("Property Area", ("Urban","Rural","Semiurban"))
   ApplicantIncome = st.slider("Applicant Income",0,50000,81000)
   CoapplicantIncome = st.slider("Co-Applicant Income",0,50000,20000)
@@ -46,12 +46,12 @@ with st.sidebar:
 #creating a dataframe for the input features
 data = {"Gender":Gender,
         "Married":Married,
-        "Dependants":Dependants,
+        "Dependents":Dependents,
         "Education":Education,
         "Self_Employed":Self_Employed,
         "Credit_History":Credit_History,
         "Property_Area":Property_Area,
-        "pplicantIncome":ApplicantIncome,
+        "ApplicantIncome":ApplicantIncome,
         "CoapplicantIncome":CoapplicantIncome,
         "LoanAmount":LoanAmount}
             
