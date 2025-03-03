@@ -100,8 +100,21 @@ df_pred_proba.colums = ["Y","N"]
 
 #displaying the prediction
 st.subheader("Loan Application Status")
-st.dataframe(df_pred_proba , colomn_config ={"Y":st.column_config.ProgressColumn("Y",format = "%f",width="medium",min_value=0,max_value=1)
-                                            "N":st.column_config.ProgressColumn("N",format = "%f",width="medium",min_value=0,max_value=1)})   
+st.dataframe(df_pred_proba ,
+             colomn_config ={
+               "Y" : st.column_config.ProgressColumn(
+                 "Y",
+                 format = "%f",
+                 width="medium",
+                 min_value=0,
+                 max_value=1)
+               "N" : st.column_config.ProgressColumn(
+                 "N",
+                 format = "%f",
+                 width="medium",
+                 min_value=0,
+                 max_value=1),
+             },hide_index = True)   
 
 result = np.array(["Y" ,"N"])
 st.success(str(result[prediction][0]))
