@@ -10,6 +10,6 @@ st.write('this is a web application for a machine learning model for a loan elig
 #expanders to display dataset info
 with st.expander("Data"):
   st.write("**Here's the raw data")
-  df = pd.read_csv('https://github.com/wakhalumbololo/sk-loan_eligability/blob/master/train.csv')
+  df = pd.read_csv('train.csv')
   df
   
