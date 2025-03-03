@@ -1,6 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
+import sklearn.ensamble import RandomForestClassifier
 
 #title and description
 st.title('😁 Loan Eligability System')
@@ -86,5 +87,21 @@ with st.expander("training data"):
   st.write("**Y Values**")
   y_train
 
+# model training
+clf = RandomForestClassifier()
+clf.fit(x_train,y_train)
 
-  
+prediction = clf.predict(input_row)
+pred_proba = clf_predict_proba(input_row)
+
+df_pred_proba = pd.DataFrame(pred_proba)
+df_pred_proba.colums = ["Y","N"]
+
+#displaying the prediction
+st.subheader("Loan Application Status)
+st.dataframe(df_pred_proba , colomn_config ={"Y":st.column_config.ProgressColumn("Y",format = "%f",width="medium",min_value=0,max_value=1)
+                                            "N":st.column_config.ProgressColumn("N",format = "%f",width="medium",min_value=0,max_value=1)})   
+
+result = np.array(["Y" ,"N"])
+st.success(str(result[prediction][0]))
+
