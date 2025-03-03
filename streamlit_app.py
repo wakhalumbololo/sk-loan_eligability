@@ -104,13 +104,13 @@ df_pred_proba.rename(columns = {0:"Y",
 #displaying the prediction
 st.subheader("Loan Application Status")
 st.dataframe(df_pred_proba ,
-             colomn_config ={
+             column_config ={
                "Y" : st.column_config.ProgressColumn(
                  "Y",
                  format = "%f",
                  width="medium",
                  min_value=0,
-                 max_value=1)
+                 max_value=1),
                "N" : st.column_config.ProgressColumn(
                  "N",
                  format = "%f",
