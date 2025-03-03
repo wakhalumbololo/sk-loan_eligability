@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import sklearn.ensamble import RandomForestClassifier
+import sklearn.ensemble import RandomForestClassifier
 
 
 #title and description
