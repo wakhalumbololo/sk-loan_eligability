@@ -97,7 +97,9 @@ pred_proba = clf_predict_proba(input_row)
 
 df_pred_proba = pd.DataFrame(pred_proba)
 df_pred_proba.columns = ["Y","N"]
-#df_pred_proba.rename(
+df_pred_proba.rename(columns = {0:"Y",
+                                1:"N"
+                               }
 
 #displaying the prediction
 st.subheader("Loan Application Status")
