@@ -14,6 +14,7 @@ with st.expander("Data Set"):
   st.write("**Here's the raw data**")
   df = pd.read_csv('train.csv')
   df.dropna(axis=0 , inplace = True)
+  df.["Loan_Status"].replace("Y": "Loan Approved" , "N" : "Rejected")
   df
 
 # the x an y variables
@@ -96,29 +97,29 @@ prediction = clf.predict(input_row)
 pred_proba = clf.predict_proba(input_row)
 
 df_pred_proba = pd.DataFrame(pred_proba)
-df_pred_proba.columns = ["Y","N"]
-df_pred_proba.rename(columns = {0:"Y",
-                                1:"N"
+df_pred_proba.columns = ["Loan Approved","Rejected"]
+df_pred_proba.rename(columns = {0:"Loan Approved",
+                                1:"Rejected"
                                })
 
 #displaying the prediction
 st.subheader("Loan Application Status")
 st.dataframe(df_pred_proba ,
              column_config ={
-               "Y" : st.column_config.ProgressColumn(
-                 "Y",
+               "Loan Approved" : st.column_config.ProgressColumn(
+                 "Loan Approved",
                  format = "%f",
                  width="200",
                  min_value=0,
                  max_value=1),
-               "N" : st.column_config.ProgressColumn(
-                 "N",
+               "Rejected" : st.column_config.ProgressColumn(
+                 "Rejected",
                  format = "%f",
                  width="200",
                  min_value=0,
                  max_value=1),
              },hide_index = True)   
 
-result = np.array(["Y" ,"N"])
+result = np.array(["Loan Approved" ,"Rejected"])
 st.success(str(result[prediction][0]))
 
