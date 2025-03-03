@@ -9,8 +9,16 @@ st.write('this is a web application for a machine learning model for a loan elig
 
 #expanders to display dataset info
 with st.expander("Data"):
-  st.write("**Here's the raw data")
+  st.write("**Here's the raw data**")
   df = pd.read_csv('train.csv')
   df.dropna(axis=0 , inplace = True)
   df
-  
+
+# the x an y variables
+  st.write("**X-Variables**")
+  x_raw = df.drop("Loan_Status", axis=1)
+  x_raw
+
+  st.write("**Y-Variable**")
+  y_raw = df.Loan_Status
+  y_raw
