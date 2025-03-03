@@ -48,12 +48,12 @@ data = {"Gender":Gender,
         "Married":Married,
         "Dependants":Dependants,
         "Education":Education,
-        "Self Employed":Self_Employed,
-        "Credit history":Credit_History,
-        "Property Area":Property_Area,
-        "Applicant Income":ApplicantIncome,
-        "Co-Applicant Income":CoapplicantIncome,
-        "Loan amount":LoanAmount}
+        "Self_Employed":Self_Employed,
+        "Credit_History":Credit_History,
+        "Property_Area":Property_Area,
+        "pplicantIncome":ApplicantIncome,
+        "CoapplicantIncome":CoapplicantIncome,
+        "LoanAmount":LoanAmount}
             
 input_df = pd.DataFrame(data , index = [0])
 input2_df = pd.concat([input_df, x_raw] , axis = 0)
