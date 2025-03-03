@@ -1,9 +1,9 @@
-# 📦 Streamlit App Starter Kit 
+# 😁 Loan Eligability 
 ```
 ⬆️ (Replace above with your app's name)
 ```
 
-Description of the app ...
+This is a machine learning web application for a loan eligability system
 
 ## Demo App
 
