@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 import sklearn.ensamble import RandomForestClassifier
 
+
 #title and description
 st.title('😁 Loan Eligability System')
 
