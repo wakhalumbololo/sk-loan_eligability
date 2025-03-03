@@ -10,5 +10,5 @@ st.write('this is a web application for a machine learning model for a loan elig
 #expanders to display dataset info
 with st.expander("Data"):
   st.write("**Here's the raw data")
-  df = pd.read_csv(r"C:\Users\skche\OneDrive\Desktop\project 4 planning\loan eligability ds\train.csv")
+  df = pd.read_csv(https://drive.google.com/file/d/1Js7dRLUasXdvoa7CNoHe2fcoF1-sVQKf/view?usp=drive_link)
   df
