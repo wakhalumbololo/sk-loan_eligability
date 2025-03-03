@@ -108,13 +108,13 @@ st.dataframe(df_pred_proba ,
                "Y" : st.column_config.ProgressColumn(
                  "Y",
                  format = "%f",
-                 width="medium",
+                 width="200",
                  min_value=0,
                  max_value=1),
                "N" : st.column_config.ProgressColumn(
                  "N",
                  format = "%f",
-                 width="medium",
+                 width="200",
                  min_value=0,
                  max_value=1),
              },hide_index = True)   
