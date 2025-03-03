@@ -38,5 +38,6 @@ with st.sidebar:
   Self_Employed = st.selectbox("Self Employed", ("Yes","No"))
   Credit_History = st.selectbox("Credit history", ("0","1"))
   Property_Area = st.selectbox("Property Area", ("Urban","Rural","Semiurban"))
+  ApplicantIncome = st.slider("Applicant Income",0,50000,81000)
   
   
