@@ -17,7 +17,7 @@ with st.expander("Data Set"):
 # the x an y variables
   st.write("**X-Variables**")
   x_raw = df.drop("Loan_Status", axis=1)
-  x_raw = df.drop("Loan_ID", axis=1)
+  x_raw.drop("Loan_ID", axis=1 , inplace=True)
   x_raw
 
   st.write("**Y-Variable**")
