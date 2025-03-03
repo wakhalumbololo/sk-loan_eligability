@@ -99,7 +99,7 @@ df_pred_proba = pd.DataFrame(pred_proba)
 df_pred_proba.colums = ["Y","N"]
 
 #displaying the prediction
-st.subheader("Loan Application Status)
+st.subheader("Loan Application Status")
 st.dataframe(df_pred_proba , colomn_config ={"Y":st.column_config.ProgressColumn("Y",format = "%f",width="medium",min_value=0,max_value=1)
                                             "N":st.column_config.ProgressColumn("N",format = "%f",width="medium",min_value=0,max_value=1)})   
 
