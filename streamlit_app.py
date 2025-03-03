@@ -99,7 +99,7 @@ df_pred_proba = pd.DataFrame(pred_proba)
 df_pred_proba.columns = ["Y","N"]
 df_pred_proba.rename(columns = {0:"Y",
                                 1:"N"
-                               }
+                               })
 
 #displaying the prediction
 st.subheader("Loan Application Status")
