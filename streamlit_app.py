@@ -8,7 +8,7 @@ st.title('😁 Loan Eligability System')
 st.write('this is a web application for a machine learning model for a loan eligability system')
 
 #expanders to display dataset info
-with st.expander("Data"):
+with st.expander("Data Set"):
   st.write("**Here's the raw data**")
   df = pd.read_csv('train.csv')
   df.dropna(axis=0 , inplace = True)
@@ -22,3 +22,9 @@ with st.expander("Data"):
   st.write("**Y-Variable**")
   y_raw = df.Loan_Status
   y_raw
+
+with st.expander("data visualization"):
+  st.write("**Scatter Plot of income vs loan amount")
+  st.scatter_chart(data = df, x = "ApplicantIncome" , y = "LoanAmount", color = "Loan_Status")
+
+
