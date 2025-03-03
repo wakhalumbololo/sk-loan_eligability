@@ -93,7 +93,7 @@ clf = RandomForestClassifier()
 clf.fit(x_train,y_train)
 
 prediction = clf.predict(input_row)
-pred_proba = clf_predict_proba(input_row)
+pred_proba = clf.predict_proba(input_row)
 
 df_pred_proba = pd.DataFrame(pred_proba)
 df_pred_proba.columns = ["Y","N"]
