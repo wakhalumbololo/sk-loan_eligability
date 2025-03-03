@@ -31,4 +31,4 @@ with st.expander("data visualization"):
 #input features
 with st.sidebar:
   st.header("Applicant details (input)")
-  Gender = st.selectbox("Gender",("Male","Female")
+  Gender = st.selectbox("Gender",("Male","Female"))
