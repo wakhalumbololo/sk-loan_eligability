@@ -14,7 +14,7 @@ with st.expander("Data Set"):
   st.write("**Here's the raw data**")
   df = pd.read_csv('train.csv')
   df.dropna(axis=0 , inplace = True)
-  df.["Loan_Status"].replace("Y": "Loan Approved" , "N" : "Rejected")
+  df["Loan_Status"].replace("Y": "Loan Approved" , "N" : "Rejected")
   df
 
 # the x an y variables
