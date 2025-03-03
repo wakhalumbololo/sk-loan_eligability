@@ -56,7 +56,7 @@ data = {"Gender":Gender,
         "Loan amount":LoanAmount}
             
 input_df = pd.DataFrame(data , index = [0])
-input2_df = pd.concat([input_df,x_raw] , axis = 0)
+input2_df = pd.concat([input_df, x_raw] , axis = 0)
 
 with st.expander("Applicant Details"):
   st.write("**Input data**")
