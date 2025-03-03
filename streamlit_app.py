@@ -17,6 +17,7 @@ with st.expander("Data Set"):
 # the x an y variables
   st.write("**X-Variables**")
   x_raw = df.drop("Loan_Status", axis=1)
+  x_raw = df.drop("Loan_ID", axis=1)
   x_raw
 
   st.write("**Y-Variable**")
@@ -27,4 +28,4 @@ with st.expander("data visualization"):
   st.write("**Scatter Plot of income vs loan amount")
   st.scatter_chart(data = df, x = "ApplicantIncome" , y = "LoanAmount", color = "Loan_Status")
 
-
+#input features
