@@ -1,6 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
+from sklearn import preprocessing
 
 #title and description
 st.title('😁 Loan Eligability System')
@@ -63,5 +64,28 @@ with st.expander("Applicant Details"):
   input_df
   st.write("**Combined Input data**")
   input2_df
+  
+#DATA PREPERATIONS FOR MACHINE LEARNING 
+# ENCODING X VALUES
+encode = ["Gender","Married","Dependents","Education","Self_Employed","Property_Area"]
+input3_df = pd.get_dummies(input2_df , prefix = encode)
+x_train = input3_df[1:]
+input_row = input3_df[:1]
+
+#ENCODING Y VALUES
+encode2 = {"Y":0, "N":1}
+def target_encode(value):
+  return encode2[value]
+
+y_train = y_raw.apply(target_encode)
+
+with st.expander("training data"):
+  st.write("**input row**")
+  input_row
+  st.write("**X Values**")
+  x_train
+  st.write("**Y Values**")
+  y_train
+
 
   
