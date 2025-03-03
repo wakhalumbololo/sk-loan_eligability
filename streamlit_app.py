@@ -29,3 +29,6 @@ with st.expander("data visualization"):
   st.scatter_chart(data = df, x = "ApplicantIncome" , y = "LoanAmount", color = "Loan_Status")
 
 #input features
+with st.sidebar:
+  st.header("Applicant details (input)")
+  Gender = st.selectbox("Gender",("Male","Female")
