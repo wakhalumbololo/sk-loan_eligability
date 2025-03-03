@@ -32,3 +32,5 @@ with st.expander("data visualization"):
 with st.sidebar:
   st.header("Applicant details (input)")
   Gender = st.selectbox("Gender",("Male","Female"))
+  Married = st.selectbox("Married?",("Yes","No"))
+  
