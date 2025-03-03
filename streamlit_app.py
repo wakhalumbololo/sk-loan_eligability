@@ -32,9 +32,11 @@ with st.expander("data visualization"):
 with st.sidebar:
   st.header("Applicant details (input)")
   Gender = st.selectbox("Gender",("Male","Female"))
-  Married = st.selectbox("Married?",("Yes","No"))
+  Married = st.selectbox("Married",("Yes","No"))
   Dependants = st.selectbox("Dependants",("0","1","2","3+"))
   Education = st.selectbox("Education", ("Graduate","Not Graduate"))
-  Self_Employed = st.selectbox("Self Employed?", ("Yes","No"))
+  Self_Employed = st.selectbox("Self Employed", ("Yes","No"))
+  Credit_History = st.selectbox("Credit history", ("0","1"))
+  Property_Area = st.selectbox("Property Area", ("Urban","Rural","Semiurban"))
   
   
