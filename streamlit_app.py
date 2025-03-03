@@ -42,6 +42,26 @@ with st.sidebar:
   ApplicantIncome = st.slider("Applicant Income",0,50000,81000)
   CoapplicantIncome = st.slider("Co-Applicant Income",0,50000,20000)
   LoanAmount = st.slider("Loan amount", 17 , 100, 600)
-  
-  
+
+#creating a dataframe for the input features
+data = {"Gender":Gender,
+        "Married":Married,
+        "Dependants":Dependants,
+        "Education":Education,
+        "Self Employed":Self_Employed,
+        "Credit history":Credit_History,
+        "Property Area":Property_Area,
+        "Applicant Income":ApplicantIncome,
+        "Co-Applicant Income":CoapplicantIncome,
+        "Loan amount":LoanAmount}
+            
+input_df = pd.DataFrame(data , index = [0])
+input2_df = pd.concat([input_df,x_raw] , axis = 0)
+
+with st.expander("Applicant Details"):
+  st.write("**Input data**")
+  input_df
+  st.write("**Combined Input data**")
+  input2_df
+
   
