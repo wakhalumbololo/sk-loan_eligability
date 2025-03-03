@@ -11,5 +11,6 @@ st.write('this is a web application for a machine learning model for a loan elig
 with st.expander("Data"):
   st.write("**Here's the raw data")
   df = pd.read_csv('train.csv')
+  df.dropna(axis=0 , inplace = True)
   df
   
