@@ -1,6 +1,6 @@
-# 😁💰 Loan Eligability 
+# 😁💰 Loan Eligibility 
 
-This is a machine learning web application for a loan eligability system
+This is a machine learning web application for a loan eligibility system
 
 ## Demo App
 
