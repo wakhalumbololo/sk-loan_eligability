@@ -13,7 +13,7 @@ https://sk-loaneligability-dqvpqisudnlpi3ltu86amk.streamlit.app/)
 
 ## Overview 
 
-This is a Machine Learning model that predicts and Gives the probability of whether a client will be approved for a loan, based on demographics,  financial situation, loan amount and education# Loan Eligibility Prediction App
+This is a Machine Learning model that predicts and Gives the probability of whether a client will be approved for a loan, based on demographics,  financial situation, loan amount and education
 
 ## Features
 - User-friendly Streamlit interface
