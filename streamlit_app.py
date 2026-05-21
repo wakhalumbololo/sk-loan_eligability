@@ -5,9 +5,9 @@ from sklearn.ensemble import RandomForestClassifier
 
 
 #title and description
-st.title('😁 Loan Eligability System')
+st.title('😁 Loan Eligibility System')
 
-st.write('this is a web application for a machine learning model for a loan eligability system')
+st.write('this is a web application for a machine learning model for a loan eligibility system')
 
 #expanders to display dataset info
 with st.expander("Data Set"):
