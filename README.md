@@ -1,7 +1,4 @@
 # 😁💰 Loan Eligability 
-```
-⬆️ (Replace above with your app's name)
-```
 
 This is a machine learning web application for a loan eligability system
 
