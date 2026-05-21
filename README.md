@@ -4,7 +4,7 @@ This is a machine learning web application for a loan eligability system
 
 ## Demo App
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://sk-loan_eligability.streamlit.app/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]https://sk-loaneligability-dqvpqisudnlpi3ltu86amk.streamlit.app/)
 
 ## GitHub Codespaces
 
