@@ -10,13 +10,6 @@ This is a machine learning web application for a loan eligability system
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/app-starter-kit?quickstart=1)
 
-## Section Heading
+## Additional details 
 
-This is filler text, please replace this with text for this section.
-
-## Further Reading
-
-This is filler text, please replace this with a explanatory text about further relevant resources for this repo
-- Resource 1
-- Resource 2
-- Resource 3
+This is a Machine Learning model that predicts and Gives the probability of whether a client will be approved for a loan, based on demographics,  financial situation, loan amount and education 
